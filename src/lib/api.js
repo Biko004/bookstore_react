@@ -14,6 +14,12 @@ export function getSingleBook(book_id) {
   }
 
 
+export function updateBook(updatedBook) {
+    return axios.post(`${baseUrl}/update_book`, updatedBook);
+}
+
+
+
 export function addBook(newBook){
     return axios.post(`${baseUrl}/add_book`, newBook);
 }

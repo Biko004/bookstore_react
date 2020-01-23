@@ -28,9 +28,7 @@ class BookAddForm extends React.Component {
         this.setState({name: '',author: '',year: ''})
     }
 
-    updateForm(event, newForm) {
-        this.setState({ form: Object.assign(this.state.form, newForm)});
-    }
+
 
     handleNameChange(e){
         this.setState({  name: e.target.value})
@@ -44,8 +42,10 @@ class BookAddForm extends React.Component {
         this.setState({  year: e.target.value})
     }
 
+
     render() {
         let {name, author, year} = this.state
+
         return (
 
                     <div>
